@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 w-full bg-primary-white/95 z-10 shadow-lg">
+      <header className="fixed top-0 w-full bg-primary-white/100 z-10 shadow-lg">
         <div className="max-w-screen-xl mx-auto w-full ">
           <div className="w-full flex items-center justify-between px-10 lg:px-0 py-5 lg:py-0">
             <Link>
