@@ -59,7 +59,7 @@ const NavItems = ({ ToggleMenu }) => {
             </li>
           </Link>
 
-          <Link to="/aboutus" className="block lg:hidden">
+          <Link to="/aim-nd-scope" className="block lg:hidden">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -72,7 +72,7 @@ const NavItems = ({ ToggleMenu }) => {
             </li>
           </Link>
 
-          <Link to="/aboutus" className="block lg:hidden">
+          <Link to="/editorial-board" className="block lg:hidden">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -85,7 +85,7 @@ const NavItems = ({ ToggleMenu }) => {
             </li>
           </Link>
 
-          <Link to="/aboutus" className="block lg:hidden">
+          <Link to="/issues" className="block lg:hidden">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -98,7 +98,7 @@ const NavItems = ({ ToggleMenu }) => {
             </li>
           </Link>
 
-          <Link to="/aboutus" className="block lg:hidden">
+          <Link to="/author-guidelines" className="block lg:hidden">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -111,7 +111,7 @@ const NavItems = ({ ToggleMenu }) => {
             </li>
           </Link>
 
-          <Link to="/aboutus" className="block lg:hidden">
+          <Link to="/copyrights-form" className="block lg:hidden">
             <li
               onClick={() => {
                 ToggleMenu(false);
