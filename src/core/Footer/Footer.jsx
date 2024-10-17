@@ -41,25 +41,19 @@ export default function Footer() {
             <div className=''>
               <h2 className="mb-3 font-semibold text-lg uppercase underline">Resources</h2>
               <ul className="font-medium">
-                <li className="">
-                  <Link to="/" onClick={scrollToTop}  className="hover:underline">Home</Link>
-                </li>
-                <li className="">
-                  <Link to="/aboutus" onClick={scrollToTop}  className="hover:underline">About Us</Link>
-                </li>
-                <li className="">
-                  <Link to="/contactus" onClick={scrollToTop}  className="hover:underline">Contact Us</Link>
-                </li>
+                <li className=""><Link to="/" onClick={scrollToTop}  className="hover:underline">Home</Link></li>
+                <li className=""><Link to="/aboutus" onClick={scrollToTop}  className="hover:underline">About Us</Link></li>
+                <li className=""><Link to="/contactus" onClick={scrollToTop}  className="hover:underline">Contact Us</Link></li>
               </ul>
             </div>
             <div >
               <h2 className="mb-3 font-semibold text-lg uppercase underline">Journal Overview</h2>
-              <ul className=" dark:text-gray-400 font-medium">
+              <ul className=" font-medium">
                 <li><Link to="/editorial-board" onClick={scrollToTop}  className="hover:underline mb-2">Editorial Board</Link></li>
                 <li><Link to="/peer-review" onClick={scrollToTop}  className="hover:underline mb-2">Peer Review Process</Link></li>
                 <li><Link to="/pub-ethics" onClick={scrollToTop}  className="hover:underline mb-2">Publication Ethics</Link></li>
                 <li><Link to="/abstracting&index" onClick={scrollToTop}  className="hover:underline mb-2">Abstracting and Indexing</Link></li>
-                <li><Link to="/articleindex" onClick={scrollToTop}  className="hover:underline mb-2">Article Processing Charges</Link></li>
+                <li><Link to="/articleindex" onClick={scrollToTop}  className="hover:underline mb-2">Article Processing</Link></li>
                 {/* <li><Link to="#" onClick={scrollToTop}  className="hover:underline mb-2">Journal Reports</Link></li> */}
               </ul>
             </div>
@@ -75,7 +69,6 @@ export default function Footer() {
           </div>
           <div className='relative'>
           <IoIosArrowDropupCircle onClick={scrollToTop} className='text-4xl cursor-pointer absolute right-0 bottom-28 md:-bottom-20 xl:-bottom-24 lg:mt-32 brightness-75 hover:brightness-150 duration-200 ease-out'/>
-
           </div>
         
         <hr className="my-3 md:my-6 border-gray-200 sm:mx-auto lg:my-8" />
@@ -85,7 +78,7 @@ export default function Footer() {
          
       </div>
     </div>
-    <div className='relative'><a href=""><img src="logo/ojs_brand.png" alt="" className='drop-shadow-[] h-16 absolute right-5 md:right-24 bottom-20 md:bottom-2 2xl:right-[400px]'/></a></div>
+    <div className='relative'><a href="https://ijdid.com/ijdid/index.php/ijdid/about/submissions"><img src="logo/ojs_brand.png" alt="" className='drop-shadow-[] h-16 absolute right-5 md:right-24 bottom-20 md:bottom-2 2xl:right-[400px]'/></a></div>
 </footer>
 
     

@@ -1,0 +1,17 @@
+RewriteEngine on
+
+# Check if the requested file or directory exists
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+
+RewriteRule ^(.*) /index.html [NC,L]
+
+# Redirect specific paths to the OJS index
+RewriteRule ^submissions$ /tmp2/index.php/home/submissions [L]
+RewriteRule ^submissions#active$ /tmp2/index.php/home/submissions#active [L]
+RewriteRule ^login$ /tmp2/index.php/home/login [L]
+
+# Redirect all other requests to the OJS index with the corresponding path
+RewriteRule ^(.*)$ /tmp2/index.php/home/$1 [L,QSA]

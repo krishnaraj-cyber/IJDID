@@ -23,7 +23,7 @@ function Copyrights() {
             <p className="md:w-[450px] leading-relaxed" > I/We 
             ____________________________.  The author / authors of the research paper/article
             entitled ______________________
-             authorize you to publish the above mentioned paper/article in IJACSER.</p>
+             authorize you to publish the above mentioned paper/article in IJDID.</p>
             {/* <h1 className=" text-justify mb-1">
               I/We
               _____________________________________________________________________.
@@ -53,7 +53,7 @@ function Copyrights() {
               3. The Author also warrants that he or she has the right to enter into this Agreement; that the Article contains no libelous or unlawful statements, no instructions that may cause harm or injury, and does not violate copyright or trademark laws or infringe on the rights or privacy of others; and that all statements in the Article asserted as facts are either true or based on reasonable research.
             </h1>
             <h1 className=" text-justify mb-2">
-              4. I/We agree to indemnify the Editors of IJACSER against all claims and expenses arising from any breach of warranty on my/our part in this agreement.
+              4. I/We agree to indemnify the Editors of IJDID against all claims and expenses arising from any breach of warranty on my/our part in this agreement.
             </h1>
 
             <div className="flex justify-between items-center mt-5">

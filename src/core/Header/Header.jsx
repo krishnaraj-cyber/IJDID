@@ -28,7 +28,7 @@ const Header = () => {
     <>
       <header className="fixed top-0 w-full bg-primary-white/100 z-10 shadow-lg">
         <div className="max-w-screen-xl mx-auto w-full ">
-          <div className="w-full flex items-center justify-between px-10 lg:px-0 py-5 lg:py-0">
+          <div className="w-full flex items-center justify-between px-10 2xl:px-0 py-1 md:py-2 lg:py-0">
             <Link>
               <img src={websitelogo} alt="Website Logo" className="px-7"/>
             </Link>
@@ -51,14 +51,14 @@ const Header = () => {
                 className={` ${
                   // MenuOpen ? " block" : "hidden "
                   MenuOpen ? "max-h-screen" : "max-h-0"
-                } overflow-hidden duration-500 lg:max-h-none absolute lg:flex lg:static bg-primary-white/85 rounded-b-xl lg:bg-transparent left-0 top-[125px] lg:w-auto w-full `}
+                } overflow-hidden duration-500 lg:max-h-none absolute lg:flex lg:static bg-primary-white/85 rounded-b-xl lg:bg-transparent left-0 top-[92px] md:top-[100px] lg:w-auto w-full `}
               >
                 <NavItems ToggleMenu={ToggleMenu}/>
               </div>
             </div>
           </div>
           <div className="lg:hidden block absolute w-full">
-        <button className={ ` whitespace-nowrap w-full  hover:rounded-ss-3xl hover:rounded-ee-3xl bg-primary-brown text-white border    p-2.5 px-5 font-medium duration-500`} >Submit New Article</button>
+        <a href="https://ijdid.com/ijdid/index.php/ijdid/about/submissions" rel="noopener noreferrer"><button className={ ` whitespace-nowrap w-full  hover:rounded-ss-3xl hover:rounded-ee-3xl bg-primary-brown text-white border    p-2.5 px-5 font-medium duration-500`} >Submit New Article</button></a>
         </div>
         </div>
       </header>

@@ -14,6 +14,10 @@ const NavItems = ({ ToggleMenu }) => {
     setdropDown2(!dropDown2);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef2.current && !menuRef2.current.contains(event.target)) {
@@ -32,7 +36,7 @@ const NavItems = ({ ToggleMenu }) => {
     <>
       <nav ref={menuRef2} className="flex overflow-y-scroll lg:overflow-auto">
         <ul className="lg:flex items-center gap-2 text-center  py-2 px-10 w-full *:*:duration-300">
-          <Link to="/" className="">
+          <Link onClick={scrollToTop}  to="/" className="">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -46,7 +50,7 @@ const NavItems = ({ ToggleMenu }) => {
             </li>
           </Link>
 
-          <Link to="/aboutus" className="block lg:hidden">
+          <Link onClick={scrollToTop}  to="/aboutus" className="block lg:hidden">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -59,7 +63,7 @@ const NavItems = ({ ToggleMenu }) => {
             </li>
           </Link>
 
-          <Link to="/aim-nd-scope" className="block lg:hidden">
+          <Link onClick={scrollToTop}  to="/aim-nd-scope" className="block lg:hidden">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -72,7 +76,7 @@ const NavItems = ({ ToggleMenu }) => {
             </li>
           </Link>
 
-          <Link to="/editorial-board" className="block lg:hidden">
+          <Link onClick={scrollToTop}  to="/editorial-board" className="block lg:hidden">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -85,7 +89,7 @@ const NavItems = ({ ToggleMenu }) => {
             </li>
           </Link>
 
-          <Link to="/issues" className="block lg:hidden">
+          <Link onClick={scrollToTop}  to="/issues" className="block lg:hidden">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -98,7 +102,7 @@ const NavItems = ({ ToggleMenu }) => {
             </li>
           </Link>
 
-          <Link to="/author-guidelines" className="block lg:hidden">
+          <Link onClick={scrollToTop}  to="/author-guidelines" className="block lg:hidden">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -111,7 +115,7 @@ const NavItems = ({ ToggleMenu }) => {
             </li>
           </Link>
 
-          <Link to="/copyrights-form" className="block lg:hidden">
+          <Link onClick={scrollToTop}  to="/copyrights-form" className="block lg:hidden">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -181,11 +185,12 @@ const NavItems = ({ ToggleMenu }) => {
                   toggleDrop1={toggleDrop1}
                   toggleDrop2={toggleDrop2}
                   ToggleMenu={ToggleMenu}
+                 scrollToTop={scrollToTop}
                 />
               </div>
             </div>
           </li>
-          <Link to="/contactus">
+          <Link onClick={scrollToTop}  to="/contactus">
             <li
               onClick={() => {
                 ToggleMenu(false);
@@ -200,7 +205,7 @@ const NavItems = ({ ToggleMenu }) => {
           </Link>
         </ul>
         <div className="lg:flex items-center hidden">
-        <button className={ `h-fit whitespace-nowrap  hover:rounded-ss-3xl hover:rounded-ee-3xl border-2  hover:bg-primary-brown text-primary-brown hover:text-white border-primary-orange hover:border-primary-brown   p-2 px-5 font-medium duration-500`} >Submit New Article</button>
+        <a href="https://ijdid.com/ijdid/index.php/ijdid/about/submissions" rel="noopener noreferrer"><button className={ `h-fit whitespace-nowrap  hover:rounded-ss-3xl hover:rounded-ee-3xl border-2  hover:bg-primary-brown text-primary-brown hover:text-white border-primary-orange hover:border-primary-brown   p-2 px-5 font-medium duration-500`} >Submit New Article</button></a>
         </div>
       </nav>
     </>
